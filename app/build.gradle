@@ -76,8 +76,15 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:21.0.5'
     androidTestImplementation "androidx.test.ext:junit:${versions.junit}"
 
-    // Import the BoM
-    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+    // The Voice SDK resides on Maven Central
+    implementation 'com.twilio:voice-android:5.7.2'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:30.5.0')
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    // Add the dependency for the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics-ktx'
 }
 
+// Add the Google services Gradle plugin
 apply plugin: 'com.google.gms.google-services'
