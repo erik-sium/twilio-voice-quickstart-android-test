@@ -1,33 +1,36 @@
-// Follow the steps in https://developers.google.com/mobile/add to generate your own google-services.json file.
 {
   "project_info": {
-    "project_number": "your_project_number",
-    "project_id": "your_project_id"
+    "project_number": "798957864080",
+    "project_id": "twilio-android-sdk-integration",
+    "storage_bucket": "twilio-android-sdk-integration.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "your_mobilesdk_app_id",
+        "mobilesdk_app_id": "1:798957864080:android:2129ee4ab3e907088e4415",
         "android_client_info": {
-          "package_name": "com.twilio.voice.quickstart"
+          "package_name": "com.example.twilioandroidsdkintegrationtest"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "798957864080-0erdsu1aemkt4erbg9lktui6ps14kik7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "your_current_key"
+          "current_key": "AIzaSyDhmQQ0icJrshBAw6i218C81t9P4NCWQEA"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 1
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798957864080-0erdsu1aemkt4erbg9lktui6ps14kik7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
